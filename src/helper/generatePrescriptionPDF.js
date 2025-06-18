@@ -71,10 +71,10 @@ export const generatePrescriptionDocDefinition = async (data) => {
       absolutePosition: { x: 435, y: 215 },
     },
     {
-      text: formatDate(consultationDate),
+      text: consultationDate.split("-").reverse().join("/"),
       fontSize: 14,
       bold: true,
-      absolutePosition: { x: 462, y: 238 },
+      absolutePosition: { x: 462, y: 239 },
     },
   ].filter((f) => f.text); // skip if no value
 
